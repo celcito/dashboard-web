@@ -10,6 +10,6 @@ const Container = styled.div`
     .title{
         padding: 10px;
     }    
-        `
+`
         
 export default  Container

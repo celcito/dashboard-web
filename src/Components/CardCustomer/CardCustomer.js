@@ -3,10 +3,13 @@ import React from 'react';
 import Container from './CardCustomer.styled'
 import {Row,Col} from 'antd'
 import { useState, useEffect } from 'react';
+import Customer from '../Modal/Customer/Customer'
 
 function CardCustomer(props) {
 
     const [elements,setElements] = useState(props.element)
+    const [visible, setVisible] = useState(false);
+    const handleVisible = param => setVisible(param);
 
     useEffect(() => {
         setElements(props.element)
@@ -15,7 +18,16 @@ function CardCustomer(props) {
     const {email,pictures,name,age,budget}=elements
     return (
         <Container>
-            <Row>
+        <Customer
+            
+              visible={visible}
+              handleVisible={handleVisible}
+              data={elements}
+              
+              >
+
+        </Customer>
+            <Row  onClick={() => {handleVisible(true)}}>
                 <Col  lg={2} sm={24}>
                 <img className="image-avatar" src={pictures[0].url} alt="" />
                 </Col>

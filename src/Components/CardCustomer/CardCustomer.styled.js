@@ -22,5 +22,12 @@ const Container = styled.div`
         padding-right: 5px;
     }
 
+    .shadow{
+        background: #cccccc17;
+        -webkit-box-shadow: 0px 0px 37px -8px rgba(0,0,0,0.43);
+        -moz-box-shadow: 0px 0px 37px -8px rgba(0,0,0,0.43);
+        box-shadow: 0px 0px 37px -8px rgba(0,0,0,0.43);
+    }
+
 `
 export default Container

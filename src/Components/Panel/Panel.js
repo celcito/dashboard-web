@@ -37,7 +37,7 @@ function Panel(props) {
 
       
      return (
-        <Container>
+        <Container >
         <div> 
             <div><span className="title">Ordenar por:</span>
              <button>Menor Budget </button> <button>Maior Budget </button>  <button onClick={() => {sortOrderByName();}} >A-Z</button> <button>Z-A</button>

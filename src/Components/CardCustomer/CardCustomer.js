@@ -1,9 +1,18 @@
 import React from 'react';
+
 import Container from './CardCustomer.styled'
 import {Row,Col} from 'antd'
+import { useState, useEffect } from 'react';
 
 function CardCustomer(props) {
-    const {email,pictures,name,age,budget}=props.element
+
+    const [elements,setElements] = useState(props.element)
+
+    useEffect(() => {
+        setElements(props.element)
+    },[props.element])
+
+    const {email,pictures,name,age,budget}=elements
     return (
         <Container>
             <Row>

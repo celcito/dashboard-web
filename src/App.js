@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import { Layout } from 'antd';
-import Content from './components/layout/Content';
-import Footer from './components/layout/Footer';
-import Header from './components/layout/Header';
+import Content from './Components/Layout/Content';
+import Footer from './Components/Layout/Footer';
+import Header from './Components/Layout/Header';
 import 'antd/dist/antd.css'; 
 
 function App() {
